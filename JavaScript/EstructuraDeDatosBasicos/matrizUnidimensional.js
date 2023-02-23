@@ -114,3 +114,14 @@ let thatArray = [...thisArray];
 /*
 thisArraypermanece sin cambios y thatArraycontiene los mismos elementos que thisArray.
 */
+
+
+/*
+every(): itera sobre cada elemento de la matriz y devuelve true si todos los elementos cumplen con 
+una determinada condición, de lo contrario, devuelve false.
+
+forEach(): itera sobre cada elemento de la matriz y ejecuta una función proporcionada para cada elemento.
+
+map(): itera sobre cada elemento de la matriz y devuelve un nuevo array con los resultados de aplicar
+ una función proporcionada a cada elemento.
+*/

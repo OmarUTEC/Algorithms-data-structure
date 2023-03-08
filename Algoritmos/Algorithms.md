@@ -32,3 +32,14 @@ Resolver
 9. *Algoritmo de Programación Dinámica*: Este algoritmo utiliza el concepto de usar la solución ya encontrada para evitar el cálculo repetitivo de la misma parte del problema. Divide el problema en subproblemas superpuestos más pequeños y los resuelve.
 
 10. *Algoritmo Aleatorio*: En el algoritmo aleatorio usamos un número aleatorio para obtener un beneficio inmediato. El número aleatorio ayuda a decidir el resultado esperado.
+
+# Notaciones populares en el análisis de complejidad de algoritmos
+
+**1. Notación Big-O**
+Definimos un algoritmo peor de los casos complejidad del tiempo mediante el uso de la notación Big-O, que determina que el conjunto de funciones crece más lento o al mismo ritmo que la expresión. Además, explica la cantidad máxima de tiempo que requiere un algoritmo para considerar todos los valores de entrada.
+
+**2. Notación Omega**
+Define el mejor caso de la complejidad del tiempo de un algoritmo, la notación Omega define si el conjunto de funciones crecerá más rápido o al mismo ritmo que la expresión. Además, explica la cantidad mínima de tiempo que requiere un algoritmo para considerar todos los valores de entrada.
+
+**3. Theta Notation**
+Define el caso promedio de la complejidad temporal de un algoritmo, la notación Theta define cuándo el conjunto de funciones se encuentra en ambos O ( expresión ) y Omega ( expresión ), entonces se usa la notación Theta. Así es como definimos un caso promedio de complejidad de tiempo para un algoritmo. 

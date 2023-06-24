@@ -288,4 +288,4 @@ function DFS(Graph G(V, E)){
 # A*
 
 [dijkstra]: dijkstra.jpg
-[bfs]: BFS.jpg-null
+[bfs]: BFS.jpg

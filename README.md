@@ -266,8 +266,6 @@ function DFS(Graph G(V, E)){
 
 - Para explorar un grafo de esta manera vamos a necesitar una cola (queue).
 
-![bfs][bfs]
-
 * El camino corto tiene una cantidad de aplicaciones en la industria, aplicaciones de grandes escalas.
 
 * Algortimo Dijkstra, es el más común, pero en la practica no es el más eficiente.
@@ -288,4 +286,3 @@ function DFS(Graph G(V, E)){
 # A*
 
 [dijkstra]: dijkstra.jpg
-[bfs]: BFS.jpg

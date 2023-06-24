@@ -285,4 +285,4 @@ function DFS(Graph G(V, E)){
 
 # A*
 
-[dijkstra]: dijkstra.jpg
+[dijkstra]: Dijkstra.jpg

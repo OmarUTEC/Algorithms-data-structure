@@ -1,5 +1,5 @@
 # Algorithms and Data Structure 🤖
-
+![IA][IA]
 # SUFFIX TREE
 
 Estructura suficientemente todos los sufijos del texto en Trie
@@ -288,3 +288,4 @@ function DFS(Graph G(V, E)){
 # A*
 
 [dijkstra]: Dijkstra.jpg
+[IA]:IA.jpg

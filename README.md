@@ -303,24 +303,16 @@ sobretodo en optimizacion a gran escala, teoria de redes y grafos.
 Dado que este tipo de matrices ocurren de manera muy mal natural, se han desarrollado distintas
 maneras de representarlas.
 
-```c++
-#include <iostream>
-#include <conio.h>
-
-
-```
-
 ![matrix](matrix1.jpeg)
 
 ```c++
 Matrix de 4x5 con solo 6 valores
 
-
 [
     0 1 2 0 0
     0 0 0 1 0 
     1 0 2 0 0
-
+    0 0 0 0 1
 ]
 
 -------------------
@@ -333,7 +325,7 @@ M = new int*[5]
 
 -------------------
 
-Matrix Dynamic (heap)
+Matrix Dynamic (heap) (Matriz dianmica con doble puntero)
 
 int **M = new int*[4];
 for(i = 0; i < 4; i++){
@@ -341,3 +333,65 @@ for(i = 0; i < 4; i++){
 }
 
 ```
+***RAM requerida***
+
+- M : 8
+- filas: 4*8 = 32
+- celdas: 4*5*4 = 80
+Total: 120 bytes
+
+M1 100x2 = 8 + 100*8 + 100*2*4 = 2008
+M2 2x100 = 8 + 2*8 + 2*100*4 = 816
+
+* ¿M1 y M2 tiene el mismo tamaño?
+
+    * M1 y M2 tienen la misma cantidad de elementos, pero M1 ocupa más espacio en memoria.
+
+* ¿Existe alguna forma de representar ambas matrices tal que ambas pesen lo mismo?
+
+    * 
+
+-----------------------------------------
+* vacios con nullptr
+
+[
+
+    n 1 2 n n 
+
+    n n n 1 n 
+
+    1 n 2 n n 
+
+    n 3 n n n 
+]
+
+* La mejor manera de representar la ausencia de un valor es con un puntero nulo.
+
+```c++
+int ***M = new int***[4];
+for (i = 0; i < 4; i++){
+    M[i] = new int*[5];
+    for (j = 0; j < 5; j++){
+        M[i][j] = nullptr;
+    }
+}
+
+set(i, j, X){
+    if (M[i][j] != nullptr){
+        M[i][j] = new int;
+    }
+    *M[i][j] = X;
+}
+
+```
+- Espacio requerido
+    - M : 8
+    - filas: 4*8 = 32
+    - celdas: 4*5*8 = 160
+        - Subtotal: 144 bytes
+    * Total = 200 + n * 4 
+```
+# Desperdicio de memoria con los punteros nulos
+# Por ende es muy costoso
+
+

@@ -291,3 +291,53 @@ function DFS(Graph G(V, E)){
 [IA]:IA.jpg
 
 
+
+
+# 27/06/23
+
+# Matrices dispersas
+
+Son estructuras ampliamente usadas con computacion cientifica,
+sobretodo en optimizacion a gran escala, teoria de redes y grafos.
+
+Dado que este tipo de matrices ocurren de manera muy mal natural, se han desarrollado distintas
+maneras de representarlas.
+
+```c++
+#include <iostream>
+#include <conio.h>
+
+
+```
+
+![matrix](matrix1.jpeg)
+
+```c++
+Matrix de 4x5 con solo 6 valores
+
+
+[
+    0 1 2 0 0
+    0 0 0 1 0 
+    1 0 2 0 0
+
+]
+
+-------------------
+
+Matrix estatica (stack)
+int M[4][5]
+-- 4*5*4 = 80 bytes
+
+M = new int*[5]
+
+-------------------
+
+Matrix Dynamic (heap)
+
+int **M = new int*[4];
+for(i = 0; i < 4; i++){
+    M[i] = new int[5];
+}
+
+```
